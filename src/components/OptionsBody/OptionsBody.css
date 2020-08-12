@@ -1,0 +1,21 @@
+.options-body-wrapper {
+  background: #46465e;
+} 
+
+.options-body-header {
+  background: #3c4251;
+  color: #a5afd7;
+}
+
+.options-body-header-text-one {
+  font-size: 20px;
+}
+
+.options-body-header-text-two {
+  font-size: 18px;
+}
+
+.options-body-list {
+  color: #a5afd7;
+  border-bottom: 1px solid #5c5c7b;
+}

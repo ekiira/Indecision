@@ -1,0 +1,17 @@
+.add-options-input {
+  background: #333745 !important;
+  border: none !important;
+  border-bottom: 0.3rem solid #1d2028 !important;
+  color: #a5afd7 !important;
+  height: 41px !important;
+}
+
+.add-options-input:focus{
+  box-shadow: none !important;
+}
+
+.add-options-button {
+  background: #8357c5 !important;
+  border: none !important;
+  border-bottom: 0.3rem solid #693cad !important;
+}
