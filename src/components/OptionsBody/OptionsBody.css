@@ -13,7 +13,14 @@
 
 .options-body-header-text-two {
   font-size: 18px;
+  color: #a5afd7 !important;
 }
+
+.options-body-header-text-two:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
 
 .options-body-list {
   color: #a5afd7;

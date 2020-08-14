@@ -5,7 +5,11 @@ import {
 } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import { useDispatch } from 'react-redux';
+import { decision } from '../../actions';
+
 const AddOptions = () => {
+  const dispatch = useDispatch();
   const [option, setOption] = useState('');
 
   const onOptionChange = (e) => {
@@ -14,9 +18,11 @@ const AddOptions = () => {
 
   const onFormSubit = (e) => {
     e.preventDefault();
-    console.log(option);
+
+    dispatch(decision(option))
     setOption('');
   };
+  
   return (
     <div className="container px-o pt-3">
       <Form onSubmit={onFormSubit}>
@@ -32,7 +38,7 @@ const AddOptions = () => {
             </InputGroup>
           </div>
           <div className="col-lg-3">
-            <Button type="submit" value="submit" className="add-options-button font-weight-bold" block onSubmit={onFormSubit}>
+            <Button type="submit" value="submit" className="add-options-button font-weight-bold" block onClick={onFormSubit}>
               Add Option
             </Button>
           </div>

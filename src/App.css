@@ -1,4 +1,5 @@
 .app {
   background-color: #333745;
-  height: 100vh;
+  /* height: 100vh; */
+  max-height: fit-content;
 }
