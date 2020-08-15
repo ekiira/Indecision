@@ -1,15 +1,13 @@
-export const decision = (nr) => {
-  return {
-    type: 'SUGGESTION',
-    payload: nr
-  }
-}
+export const decision = (nr) => ({
+  type: 'SUGGESTION',
+  payload: nr,
+});
 
-export const removeDecision = ({ field, index }) => {
-  return {
-    type: 'REMOVE_SUGGESTION',
-    field,
-    index,
-    // payload: nr
-  }
-}
+export const removeDecision = (nr) => ({
+  type: 'REMOVE_SUGGESTION',
+  payload: nr,
+});
+
+export const removeAllDecision = () => ({
+  type: 'REMOVE_ALL_SUGGESTION',
+});

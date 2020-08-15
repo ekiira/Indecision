@@ -4,3 +4,7 @@
   border-bottom: 0.3rem solid #693cad !important;
   font-size: 32px;
 }
+
+.selected-option {
+  font-size: 37px ;
+}
