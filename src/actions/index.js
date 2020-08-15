@@ -4,3 +4,12 @@ export const decision = (nr) => {
     payload: nr
   }
 }
+
+export const removeDecision = ({ field, index }) => {
+  return {
+    type: 'REMOVE_SUGGESTION',
+    field,
+    index,
+    // payload: nr
+  }
+}

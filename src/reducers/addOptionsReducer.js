@@ -9,6 +9,11 @@ const decisonsReducer = (state = initialState, action) => {
         ...state,
       suggestedOptions: [ ...state.suggestedOptions, action.payload ] 
       };
+      case 'REMOVE_SUGGESTION':
+        return {
+          ...state,
+      suggestedOptions:   [ ...state.suggestedOptions, action.payload ]  
+      };
 
       default:
         return state;
